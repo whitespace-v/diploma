@@ -1,0 +1,77 @@
+@import "../variables";
+.Header{
+  position: fixed;
+  color: white;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &-contacts{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &-icon{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-links{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 16px;
+      }
+    }
+    &-logo{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0;
+      &-image{
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+    &-links{
+      display: flex;
+      gap: 20px;
+      font-size: 24px;
+      &-item{
+        cursor: pointer;
+      }
+    }
+    &-nav{
+      display: flex;
+      gap: 20px;
+      &-item{
+        cursor: pointer;
+      }
+    }
+    &-contact{
+      background-color: $gray;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    &-line{
+      height: 1px;
+      background-color: white;
+      position: fixed;
+      //width: 100vw;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+.Header.filled{
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+}

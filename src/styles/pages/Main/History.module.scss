@@ -1,0 +1,109 @@
+.History{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  padding-top: 60px;
+  &__container{
+    &-title{
+      display: flex;
+      justify-content: space-between;
+      &-name{
+        font-size: 34px;
+        font-weight: bold;
+        width: 569px;
+      }
+      &-image{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 936px;
+        height: 164px;
+      }
+    }
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      &-image{
+        width: 569px;
+        height: 623px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+      }
+      &-text{
+        &-quotes{
+          font-size: 240px;
+          height: 0.5em;
+        }
+        &-text{
+          font-size: 22px;
+          width: 936px;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding: 60px 0;
+    &-logo{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      &-image{
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+      }
+      &-text{
+        font-size: 34px;
+        font-weight: lighter;
+      }
+    }
+    &-nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 22px;
+      font-weight: lighter;
+    }
+    &-contacts{
+      &-contact{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &-icon{
+          font-size: 34px
+        }
+        &-links{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          &-phone{
+            font-weight: bold;
+          }
+          &-email{
+            font-weight: lighter;
+          }
+        }
+      }
+      &-links{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        font-size: 32px;
+      }
+    }
+  }
+  &__company{
+    padding: 60px 0;
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+  }
+}
